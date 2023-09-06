@@ -1,19 +1,86 @@
-*{
-    margin: 0;
-    padding: 3px;
+body {
     font-family: sans-serif;
-}
-h1{
-    color:aqua;
-    text-align: center;
-}
-body{
-    background-image: url("paper.gif");
-    background-color: #cccccc;
-}
-a{
+    font-size: 16px;
+    color: whitesmoke
+  }
+  
+  body {background-color: gray;}
+ 
+  #my-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+  }
+
+  #mysecond-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  #mythird-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  #myfourth-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  h3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
   }
