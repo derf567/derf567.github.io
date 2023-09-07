@@ -1,6 +1,6 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #f45c32;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   text-align: justify;
@@ -31,9 +31,9 @@ h1 {
   animation: fadeInUp 1s ease;
   text-align: center;
   font-style: italic;
-  
-  font-weight: 400;
-  font-size: xx-large ;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  color: #fff;
 }
 
 
@@ -43,9 +43,9 @@ h2 {
   animation: fadeInUp 1s ease;
   text-align: center;
   font-style: italic;
-  
-  font-weight: 400;
-  font-size: large ;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  color: #fff;
 }
 
 
@@ -54,6 +54,8 @@ h3 {
   color: #777;
   margin-top: 10px;
   text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
 }
 
 
@@ -61,6 +63,8 @@ h4 {
   font-size: 16px;
   margin-top: 10px;
   animation: fadeInUp 1s ease;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
 }
 
 
@@ -68,6 +72,7 @@ p {
   margin-top: 10px;
   animation: fadeIn 1s ease;
   padding: 20px;
+  font-family: "Segoe UI", sans-serif;
 }
 
 
@@ -105,6 +110,7 @@ ul li::before {
 
 span {
   font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
 }
 
 
@@ -131,81 +137,109 @@ box-shadow: 0 0 2px 1px black;
       transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes fadeInUp {
-  from {
-      opacity: 0;
-      transform: translateY(40px);
+from {
+    opacity: 0;
+    transform: translateY(40px);
+}
+to {opacity: 1;
+  transform: translateY(0);
   }
-  to {opacity: 1;
-    transform: translateY(0);
-    }
+}
+
+.contact-info {
+  display:inline-flex;
+  align-items: center; 
+  margin-bottom: 1px;
+  animation: fadeIn 1s ease;
+}
+
+.contact-icon {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+span {
+  font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: fadeIn 3s ease;
+  border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 200px;
+}
+
+img:hover {
+box-shadow: 0 0 2px 1px black;
+}
+
+
+
+
+.underline-on-hover {
+  text-decoration: underline;
+  color: red;
+}
+
+
+.btn {
+  background-color: #5bccf6;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #66d9ef;
+}
+
+
+@media (max-width: 576px) {
+  body {
+    padding: 10%;
   }
-  
-  .contact-info {
-    display:inline-flex;
-    align-items: center; 
-    margin-bottom: 1px;
-    animation: fadeIn 1s ease;
-  }
-  
-  .contact-icon {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  span {
-    font-weight: bold;
-  }
-  
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    animation: fadeIn 3s ease;
-    border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 200px;
-  }
-  
-  img:hover {
-  box-shadow: 0 0 2px 1px black;
-  }
-  
-  
-  
-  
-  .underline-on-hover {
-    text-decoration: underline;
-    color: red;
-  }
-  
-  
-  .btn {
-    background-color: #5bccf6;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #66d9ef;
-  }
-  
-  
-  @media (max-width: 576px) {
-    body {
-      padding: 10%;
-    }
-  }
+}
+
+
+.anime-bg {
+  background-image: url("https://source.unsplash.com/random");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.anime-heading {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 20px;
+  animation: fadeInUp 1s ease;
+  text-align: center;
+  font-style: italic;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.anime-text {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
