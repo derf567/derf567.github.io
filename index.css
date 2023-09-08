@@ -9,3 +9,10 @@ body{
   align-items:center;
 }
 svg{font-weight:bold;max-width:600px;height:auto;}
+
+th{
+    color: lightgray;
+}
+td{
+    color: lightgray;
+}
