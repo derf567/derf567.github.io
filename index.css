@@ -1,6 +1,6 @@
 body,html{margin:0;padding:0;height:100%;}
 body{
-  background:url('https://farm9.staticflickr.com/8760/17195790401_ceeeafcddb_o.jpg');
+  background:url('https://images.pexels.com/photos/2457183/pexels-photo-2457183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size:cover;
   font-family: 'Cabin Condensed', sans-serif;
   display:flex;
@@ -11,8 +11,18 @@ body{
 svg{font-weight:bold;max-width:600px;height:auto;}
 
 th{
-    color: lightgray;
+    color: #d6d6d6;
+    font-style: italic;
 }
 td{
-    color: lightgray;
+    color: #d6d6d6;
+    font-style: italic;
 }
+h2{
+    color: #d6d6d6;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+a {
+    color: #f2c4ce;
+  }
