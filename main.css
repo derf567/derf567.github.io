@@ -293,3 +293,6 @@ a#scroll-btn:after{
         font-size: 12px;
     }
 }
+html{
+    scroll-behavior: smooth;
+}
