@@ -66,6 +66,13 @@ button{
 .Photos-item {
     flex-basis: calc(33.33% - 20px); 
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+}
+
+/* Move the Wireframes item to the left */
+.Photos-item:nth-child(4) {
+    margin-left: auto;
 }
 
 .Photos img {
@@ -75,7 +82,7 @@ button{
     border-radius: 4px;
 }
 
-.Photos p {
+.Photos h1 {
     font-size: 1.2rem;
     color: #666;
     margin-top: 10px;
