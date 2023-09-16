@@ -1,0 +1,122 @@
+html{
+    background-color: #DAD2D2;
+}
+.balance {
+    width: 600px; /* Width of the box */
+    height: 300px; /* Height of the box */
+    background-color: rgb(252, 251, 251); /* Black background */
+    color: rgb(7, 7, 7); /* Text color */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    border-radius: 20%;
+    margin: 0 auto;
+    margin-top: 100px;
+    position:absolute;
+    left: 20%;
+}
+.Panel {
+    width: 900px; /* Width of the box */
+    height: 400px; /* Height of the box */
+    background-color: rgb(252, 251, 251); /* Black background */
+    color: rgb(7, 7, 7); /* Text color */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    border-radius: 20%;
+    margin: 0 auto;
+    margin-top: 100px;
+    position:absolute;
+    left: 30%;
+    bottom: 10%;
+}
+.profile {
+    width: 300px; /* Width of the box */
+    height: 300px; /* Height of the box */
+    background-color: rgb(10, 10, 10); /* Background color */
+    color: rgb(253, 253, 253); /* Text color */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    border-radius: 20%;
+    position: absolute; /* Allows the box to be positioned freely */
+    right: 105%;
+    top: 5%;
+}
+.Income {
+    width: 100px; /* Width of the box */
+    height: 50px; /* Height of the box */
+    background-color: rgb(255, 255, 255); /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    border-radius: 20%;
+    position: absolute; /* Allows the box to be positioned freely */
+    right: 75%;
+    bottom: 41%; 
+}
+.Expenses{
+    width: 100px; /* Width of the box */
+    height: 50px; /* Height of the box */
+    background-color: rgb(255, 255, 255); /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    border-radius: 20%;
+    position: absolute; /* Allows the box to be positioned freely */
+    right: 75%;
+    bottom: 35%; 
+}
+.Transaction{
+    width: 100px; /* Width of the box */
+    height: 50px; /* Height of the box */
+    background-color: rgb(255, 255, 255); /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    border-radius: 20%;
+    position: absolute; /* Allows the box to be positioned freely */
+    right: 75%;
+    bottom: 29%; 
+}
+.Balance{
+    width: 100px; /* Width of the box */
+    height: 50px; /* Height of the box */
+    background-color: rgb(255, 255, 255); /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    border-radius: 20%;
+    position: absolute; /* Allows the box to be positioned freely */
+    right: 75%;
+    bottom: 23%; 
+}
+.Filtering{
+    width: 100px; /* Width of the box */
+    height: 50px; /* Height of the box */
+    background-color: rgb(255, 255, 255); /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    border-radius: 20%;
+    position: absolute; /* Allows the box to be positioned freely */
+    right: 75%;
+    bottom: 17%; 
+}
+.calendar img {
+    width: 50%; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+    position: absolute; /* Allows the image to be positioned freely */
+    right: 50%;
+}
+.calendar-container {
+    width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    right: 81.5%;
+    bottom: -1%;
+}
+
+/* CSS for styling the calendar image */
+.calendar-image {
+    width: 100%; /* To make the image responsive within the container */
+}
+
+
