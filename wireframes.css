@@ -2,17 +2,66 @@ html{
     background-color: #DAD2D2;
 }
 .balance {
-    width: 600px; /* Width of the box */
-    height: 300px; /* Height of the box */
-    background-color: rgb(252, 251, 251); /* Black background */
+    width: 500px; /* Width of the box */
+    height: 280px; /* Height of the box */
+    background-color: rgb(255, 255, 255); /* Black background */
     color: rgb(7, 7, 7); /* Text color */
-    text-align: center; /* Center text horizontally */
     line-height: 50px; /* Center text vertically */
     border-radius: 20%;
     margin: 0 auto;
     margin-top: 100px;
     position:absolute;
-    left: 20%;
+    left: 20%;;
+    font-size: 25px;
+}
+
+.profile-image{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 9%;
+    top: 15%;
+    border-radius: 50%;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 70%;
+    top: 63.3%;
+    border-radius: 20%;
+}
+.Binance{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 70%;
+    top: 15.3%;
+    border-radius: 20%;
+}
+.credit{
+    position: absolute;
+    left: 15%;
+    top: 55%;
+    font-size: 25px;
+}
+.amount{
+    position: absolute;
+    left: 22%;
+    top: 32.8%;
+    font-size: 35px;
+}
+.comment{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    font-size: 25px;
+}
+.PesoSign{
+    position: absolute;
+    left: 15%;
+    top: 32%;
+    font-size: 40px;
 }
 .label{
     position: absolute;
@@ -34,7 +83,7 @@ html{
 }
 .label5{
     position: absolute;
-    left: 64%;
+    left: 64%;  
     top: 16.5%;
     font-size: 17px;
 }
@@ -79,7 +128,7 @@ html{
     line-height: 50px; /* Center text vertically */
     border-radius: 20%;
     position: absolute; /* Allows the box to be positioned freely */
-    right: 75%;
+    right: 72%;
     bottom: 41%; 
 }
 .Expenses{
@@ -91,7 +140,7 @@ html{
     line-height: 50px; /* Center text vertically */
     border-radius: 20%;
     position: absolute; /* Allows the box to be positioned freely */
-    right: 75%;
+    right: 72%;
     bottom: 35%; 
 }
 .Transaction{
@@ -103,7 +152,7 @@ html{
     line-height: 50px; /* Center text vertically */
     border-radius: 20%;
     position: absolute; /* Allows the box to be positioned freely */
-    right: 75%;
+    right: 72%;
     bottom: 29%; 
 }
 
@@ -116,7 +165,7 @@ html{
     line-height: 50px; /* Center text vertically */
     border-radius: 20%;
     position: absolute; /* Allows the box to be positioned freely */
-    right: 75%;
+    right: 72%;
     bottom: 23%; 
 }
 .Filtering{
@@ -128,21 +177,17 @@ html{
     line-height: 50px; /* Center text vertically */
     border-radius: 20%;
     position: absolute; /* Allows the box to be positioned freely */
-    right: 75%;
+    right: 72%;
     bottom: 17%; 
 }
-.calendar img {
-    width: 50%; /* Set the desired width */
-    height: auto; /* Maintain the aspect ratio */
-    position: absolute; /* Allows the image to be positioned freely */
-    right: 50%;
-}
-.calendar-container {
-    width: 300px;
-    margin: 0 auto;
+
+.calendar{
     position: absolute;
-    right: 81.5%;
-    bottom: -1%;
+    border-radius: 20%;
+    top: 46%;
+    left: 2.5%;
+    height: 520px;
+    width: 320px;
 }
 
 /* CSS for styling the calendar image */
