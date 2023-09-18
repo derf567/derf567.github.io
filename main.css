@@ -56,33 +56,26 @@ button{
 }
 
 /*photos*/
-.Photos {
+.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
 
-.Photos-item {
+.gallery-item {
     flex-basis: calc(33.33% - 20px); 
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column; /* Stack image and text vertically */
 }
 
-/* Move the Wireframes item to the left */
-.Photos-item:nth-child(4) {
-    margin-left: auto;
-}
-
-.Photos img {
+.gallery img {
     max-width: 100%;
     height: auto;
     border: 1px solid #ddd; 
     border-radius: 4px;
 }
 
-.Photos h1 {
+.gallery p {
     font-size: 1.2rem;
     color: #666;
     margin-top: 10px;
