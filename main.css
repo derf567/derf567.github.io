@@ -56,26 +56,31 @@ button{
 }
 
 /*photos*/
-.gallery {
+.Photo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
 
-.gallery-item {
+.Photo-item {
     flex-basis: calc(33.33% - 20px); 
     margin-bottom: 20px;
+    font-family: "Your Nice Font", sans-serif; /* Replace "Your Nice Font" with the actual font name you want to use */
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: normal; /* You can use "bold" for a bold style */
+    font-style: normal; /* You can use "italic" for an italic style */
+    
 }
 
-.gallery img {
+.Photo img {
     max-width: 100%;
     height: auto;
     border: 1px solid #ddd; 
     border-radius: 4px;
 }
 
-.gallery p {
+.Photo p {
     font-size: 1.2rem;
     color: #666;
     margin-top: 10px;
