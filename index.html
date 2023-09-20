@@ -1,105 +1,168 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-        <title>Fred Portfolio</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./assets/main.css">
-    </section>
-
-</head>
-<body>
-    
-
-        <a id="scroll-btn" href="#sec-2"></a>
-        <header class="header">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <section id = "sec-1">
-                        <div class="brand-name">
-                            <p class = "name">Fred Marinayy</p>
-                        </div>
-                    <section id="sec-1">
-                    <div class="nav-toggle">
-                        <span></span>
-                    </div>
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="#sec-1">Home</a></li>
-                            <li><a href="#about">About Me</a></li>
-                            <li><a href="#sec-2">Projects</a></li>
-                        </ul>
-                    </nav>
-                </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hey, I'm Fred</title>
+    <link rel="icon" type="image/x-icon" href="/img/fevicon.png?" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/derf567.github.io/assets/main.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <img class = "uic" src="./logo/logo.png" alt="logo" />
             </div>
-        </header>
 
-        <section class="home-section" id="home">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="home-content">
-                        <h4>I'm Wilfredo Genabe Marinay</h4>
-                        <h1>This is my Portfolio</h1>
-                    </div>
-                </div>
-            </div> 
-        </section>
-    </section> 
-    <section id="sec-2"></section>   
-    <div class="container">
-        <svg viewBox="0 0 960 300">
-          <symbol id="s-text">
-            <text text-anchor="middle" x="50%" y="80%">"Projects"</text>
-          </symbol>
-      
-          <g class = "g-ants">
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-          </g>
-        </svg>
-      </div>
-        <div class="parallax_section">
-            <div class="parallax_bg" style="background-image: url();"></div>
-                
-                    <div class="container">
-                        <div class="Photo">
-                            <div class="Photo-item">
-                                <a href="/activities/fashionblog/fashion.html" target="_blank">
-                                    <img src="https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project 1" ,>
-                                </a>
-                                <p>Fashion Blog</p>
-                            </div>
-                            <div class="Photo-item">
-                                <a href="/activities/winefestival/winefestival.html" target="_blank">
-                                    <img src="https://images.pexels.com/photos/787961/pexels-photo-787961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project 2">
-                                </a>
-                                <p>WineFestivalSchedule</p>
-                            </div>
-                            <div class="Photo-item">
-                                <a href="/activities/daviesburger/Davies Burger.html" target="_blank">
-                                    <img src="https://images.pexels.com/photos/5908060/pexels-photo-5908060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project 3">
-                                </a>
-                                <p>DaviesBurger </p>
-                            </div>
-                            <div class="Photo-item">
-                                <a href="/activities/financial tracker/wireframes.html" target="_blank">
-                                    <img src="https://assets.justinmind.com/wp-content/uploads/2019/04/what-are-wireframes-for-websites.png" alt="Project 3">
-                                </a>
-                                <p>Wireframe </p>
-                            </div>
-                            <!-- Add more gallery items as neeeded -->
-                        </div>
-                    </div>
-                </div>
-                    <div></div>
-                </div>
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#header">Home</a>
+                </li>
+                <li>
+                  <a href="#projects">projects</a>
+                </li>
+
+                <li>
+                  <a href="#about">About</a>
+                </li>
+              </ul>
             </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main section  -->
+
+        <div class="header-content">
+          <div class="container grid-2">
+            <div class="column-1">
+              <h1 class="header-title">Fred Marinay</h1>
+              <div class="text">
+                <p>Hello, I'm Fred, Web developer.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    
+      </header>
 
-</body>
+      <!-- projects section  -->
+
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What I Do">Projects</h3>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card-content z-index">
+                  <h3 class="title-sm">Fashion Blog</h3>
+                  <p class="text">
+
+                  </p>
+                  <a href="/derf567.github.io/activities/fashionblog/fashion.html" class="btn small"
+                    >Click Me</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card-content z-index">
+                  <h3 class="title-sm">Wine Festival</h3>
+                  <p class="text">
+
+                  </p>
+                  <a href="/derf567.github.io/activities/winefestival/winefestival.html" class="btn small"
+                  >Click Me</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-wrap">
+              <div class="card" >
+                <div class="card-content z-index">
+                  <h3 class="title-sm">Devies Burger</h3>
+                  <p class="text">
+
+                  </p>
+                  <a href="/derf567.github.io/activities/daviesburger/Davies Burger.html" class="btn small"
+                  >Click Me</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card" >
+                  <div class="card-content z-index">
+                    <h3 class="title-sm">Wireframes</h3>
+                    <p class="text">
+  
+                    </p>
+                    <a href="/derf567.github.io/activities/financial tracker/wireframes.html" class="btn small"
+                    >Click Me</a
+                    >
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- About section -->
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Who Am I">About me</h3>
+          </div>
+
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h3 class="title-sm">Hello, I'm Wilfredo Marinay</h3>
+              <p class="text">
+                Bla bla bla bla
+              </p>
+              <div class="skills">
+                <div class="skill Java">
+                  <h3 class="skill-title">Java</h3>
+                  <div class="skill-bar">
+
+                  </div>
+                </div>
+                <div class="skill HTML/CSS">
+                  <h3 class="skill-title">HTML/CSS</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="89%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/shapes/points4.png" class="points" alt="" />
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
