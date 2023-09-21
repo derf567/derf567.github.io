@@ -89,6 +89,7 @@ element.style {
 .footer {
     background-color: #222;
     padding: 6rem 0;
+    top: 20px;
 }
 *, *::before, *::after {
     margin: 0;
