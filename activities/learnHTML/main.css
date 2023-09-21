@@ -78,6 +78,44 @@ footer {
     }
 }
 .progress img{
-    width: 800px;
+    width: 760px;
     height: 500px;
+}
+
+
+/* Footer */
+element.style {
+}
+.footer {
+    background-color: #222;
+    padding: 6rem 0;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    display: block;
+}
+:root {
+    --dark-one: #333;
+
+}
+:root {
+    --swiper-navigation-size: 44px;
+}
+:root {
+    --swiper-theme-color: #007aff;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
