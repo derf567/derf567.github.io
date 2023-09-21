@@ -277,15 +277,15 @@ nav .container {
   justify-content: flex-end;
 }
 
-
-
-
-
 .header-content .container.grid-2 {
   grid-template-columns: 2.5fr 3.5fr;
   min-height: calc(100vh - 6rem);
   padding-bottom: 2.5rem;
   text-align: left;
+}
+
+.logo {
+  width: 125px;
 }
 
 /* End header */
