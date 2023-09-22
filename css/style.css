@@ -177,10 +177,10 @@ nav .container {
 }
 
 .logo {
-  width: 155px;
+  width: 250px;
   display: flex;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 200px;
 }
 
 .links ul {
