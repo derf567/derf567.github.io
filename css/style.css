@@ -28,6 +28,16 @@ body,
 button,
 input,
 */
+
+
+.profilepic{
+  border-radius: 50px;
+  height: 100px;
+  width: 100px; 
+  position: absolute;
+  top: -110px;
+  left: 670px;
+}
 textarea {
   font-family: "Poppins", sans-serif;
 }
