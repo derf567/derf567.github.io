@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo for inline JS</title>
+</head>
+<body>
+    <h1>Income Category</h1>
+    <span>Name</span>
+    <input type="text" id="txtCatName" ><br/>
+    <span>Description</span>
+    <input type="text" id="txtCatDesc"><br/>
+    <input type="button" id="btnAdd" value="Add">
+    <hr>
+    <h1>List of Home Category</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Category Name</th>
+                <th>Category Description</th>
+            </tr>
+        </thead>
+        <tbody id="listIncomeCat">
+            ...
+        </tbody>
+    </table>
+
+    <script>
+        let a = document.getElementById("txtCatName");
+        let b = document.getElementById("txtCatDesc");
+        let c = document.getElementById("btnAdd");
+        let d = document.getElementById("listIncomeCat");
+    
+        c.addEventListener("click", addCategory);
+    
+        function addCategory() {
+            let catName = a.value;
+            let catDesc = b.value;
+    
+            
+            let newRow = document.createElement("tr");
+    
+            
+            let nameCell = document.createElement("td");
+            let descCell = document.createElement("td");
+            nameCell.textContent = catName;
+            descCell.textContent = catDesc;
+            newRow.appendChild(nameCell);
+            newRow.appendChild(descCell);
+    
+            d.appendChild(newRow);
+    
+        }
+    </script>
+    
+</body>
+</html>
