@@ -26,7 +26,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="section-padding bg-gray-50">
+    <section id="projects" className="section-padding bg-gray-50 animate-fade-up">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <span className="text-primary font-semibold text-sm">02.</span>

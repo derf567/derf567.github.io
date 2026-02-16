@@ -22,7 +22,8 @@ const IntroductionSection = () => {
           style={{ animationDelay: "0.4s" }}
         >
           Crafting beautiful digital experiences with code. Computer Science student 
-          passionate about web development and creating elegant solutions.
+          passionate about web development, AI research, and creating elegant solutions 
+          for real-world problems.
         </p>
         <div className="flex gap-4 animate-fade-up" style={{ animationDelay: "0.5s" }}>
           <a

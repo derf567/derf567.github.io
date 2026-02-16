@@ -9,7 +9,7 @@ const stats = [
 
 const StatusSection = () => {
   return (
-    <section id="status" className="section-padding bg-white">
+    <section id="status" className="section-padding bg-white animate-fade-up">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <span className="text-primary font-semibold text-sm">07.</span>
@@ -38,8 +38,9 @@ const StatusSection = () => {
           </div>
           <h3 className="text-xl font-semibold mb-3">Open to Opportunities</h3>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Currently seeking internship and full-time opportunities in software development. 
-            Interested in roles involving web development, backend systems, or full-stack positions.
+            Currently seeking internship and full-time opportunities in software development, 
+            AI/ML research, and healthcare IT. Interested in roles involving web development, 
+            computer vision, or full-stack positions.
           </p>
         </div>
       </div>

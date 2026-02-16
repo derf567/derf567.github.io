@@ -33,7 +33,7 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="section-padding bg-gray-50">
+    <section id="experience" className="section-padding bg-gray-50 animate-fade-up">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <span className="text-primary font-semibold text-sm">04.</span>

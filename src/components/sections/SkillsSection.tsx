@@ -19,7 +19,7 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="section-padding bg-white">
+    <section id="skills" className="section-padding bg-white animate-fade-up">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <span className="text-primary font-semibold text-sm">03.</span>

@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Twitter, Facebook } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="section-padding bg-gradient-to-br from-purple-50 via-white to-blue-50">
+    <section id="contact" className="section-padding bg-gradient-to-br from-purple-50 via-white to-blue-50 animate-fade-up">
       <div className="max-w-2xl mx-auto text-center">
         <span className="text-primary font-semibold text-sm block mb-4">06. What's Next?</span>
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>

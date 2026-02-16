@@ -60,8 +60,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <PortfolioSidebar activeSection={sections[currentPage].id} onNavigate={goToPage} />
       <main className="md:ml-64 min-h-screen flex flex-col">
-        <div className="flex-1">
-          <CurrentComponent />
+        <div className="flex-1 animate-fade-in">
+          <CurrentComponent key={currentPage} />
         </div>
         
         {/* Navigation Controls */}
