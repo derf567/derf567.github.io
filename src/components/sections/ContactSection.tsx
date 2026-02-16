@@ -18,7 +18,7 @@ const ContactSection = () => {
           Say Hello
         </a>
 
-        <div className="flex justify-center gap-6 mt-16">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-16">
           <a
             href="https://www.facebook.com/dref567"
             target="_blank"
