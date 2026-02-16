@@ -31,7 +31,7 @@ const ContactSection = () => {
             </svg>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/derf567"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 bg-white border border-border rounded-full flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
@@ -40,7 +40,7 @@ const ContactSection = () => {
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/fred-marinay-31ab9a3a8/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 bg-white border border-border rounded-full flex items-center justify-center text-muted-foreground hover:text-blue-700 hover:border-blue-700 transition-all duration-300 shadow-sm hover:shadow-md"

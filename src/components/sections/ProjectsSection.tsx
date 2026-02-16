@@ -5,7 +5,7 @@ const projects = [
     title: "ClearSight: Forensic-Quality Surveillance Restoration",
     description: "Published research paper on AICCC. A Hierarchical Dual-Architecture Framework for Forensic-Quality Restoration of Surveillance Footage Degraded by Rain and Glare. Team: Justin Zack M. Doctolero, Wilfredo G. Marinay Jr., Joshua Emerson B. Valerio, Michel B. Bolo.",
     tech: ["AI/ML", "Computer Vision", "Research", "Published Paper"],
-    github: "https://github.com",
+    github: "https://github.com/derf567/attentive-gan-derainnet-",
     live: "#",
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     title: "Hall of Justice System",
     description: "Local system developed for Hall of Justice operations. Built as part of academic project focusing on real-world application development.",
     tech: ["Database", "System Design", "Local Deployment"],
-    github: "https://github.com",
+    github: "https://github.com/derf567/case-records",
     live: "#",
   },
 ];
