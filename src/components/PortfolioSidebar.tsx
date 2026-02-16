@@ -6,6 +6,7 @@ import {
   Wrench,
   Briefcase,
   GraduationCap,
+  Award,
   Mail,
   Activity,
   Menu,
@@ -19,6 +20,7 @@ const navItems = [
   { id: "skills", label: "Skills & Tools", icon: Wrench },
   { id: "experience", label: "Experience", icon: Briefcase },
   { id: "education", label: "Education", icon: GraduationCap },
+  { id: "certificates", label: "Certificates", icon: Award },
   { id: "contact", label: "Contact", icon: Mail },
   { id: "status", label: "Status", icon: Activity },
 ];

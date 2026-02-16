@@ -6,6 +6,7 @@ import ProjectsSection from "@/components/sections/ProjectsSection";
 import SkillsSection from "@/components/sections/SkillsSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import EducationSection from "@/components/sections/EducationSection";
+import CertificatesSection from "@/components/sections/CertificatesSection";
 import ContactSection from "@/components/sections/ContactSection";
 import StatusSection from "@/components/sections/StatusSection";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -17,6 +18,7 @@ const sections = [
   { id: "skills", component: SkillsSection },
   { id: "experience", component: ExperienceSection },
   { id: "education", component: EducationSection },
+  { id: "certificates", component: CertificatesSection },
   { id: "contact", component: ContactSection },
   { id: "status", component: StatusSection },
 ];
