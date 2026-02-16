@@ -12,7 +12,7 @@ const projects = [
     title: "Hospital Referral System",
     description: "A comprehensive referral system for all hospitals across Mindanao region. Currently in pilot testing at SPMC Hospital, Davao City, with full deployment scheduled for April 2025.",
     tech: ["Database", "System Development", "Healthcare IT"],
-    github: "https://github.com",
+    github: "https://github.com/derf567/SPMC-OJT-REFERRAL",
     live: "#",
   },
   {
