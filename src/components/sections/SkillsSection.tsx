@@ -5,7 +5,7 @@ const skills = [
   },
   {
     category: "Frameworks & Libraries",
-    items: ["Django", "Laravel", "React", "Tailwind CSS", "HTML/CSS"],
+    items: ["Django", "Firebase", "Laravel", "React", "Tailwind CSS", "HTML/CSS"],
   },
   {
     category: "Tools & Technologies",
