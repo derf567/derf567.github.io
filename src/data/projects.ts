@@ -1,3 +1,14 @@
+import ecommerce from "@/assets/Projects/ecommerce_optimized.png";
+import pool from "@/assets/Projects/pool_optimized.png";
+import madot from "@/assets/Projects/madot_optimized.png";
+import spmc from "@/assets/Projects/SPMC_AdminDash.png";
+import spmc_highdpt from "@/assets/Projects/SPMC_highdptDash.png";
+import spmc_login from "@/assets/Projects/SPMC_Login.png";
+import spmc_lowdpt from "@/assets/Projects/SPMC_lowdptDash.png";
+import spmc_referrer from "@/assets/Projects/SPMC_ReferrerDash.png";
+import clearsight from "@/assets/Projects/ClearSight.png";
+import hallOfJustice from "@/assets/Projects/hall of justice.jpg";
+
 export interface ProjectProps {
   imgPath: string;
   isBlog: boolean;
@@ -7,84 +18,42 @@ export interface ProjectProps {
   ghLink?: string;
   order: number;
   skills?: string[];
+  images?: string[];
 }
 
 export const projects: ProjectProps[] = [
   {
-    imgPath: "/img/projects/web.png",
+    imgPath: clearsight,
     isBlog: false,
-    title: "Video sharing",
+    title: "ClearSight: Forensic-Quality Surveillance Restoration",
     description:
-      "video streaming and sharing platform where users can watch, like, and comment on videos, subscribe to channels, and receive personalized recommendations. Users can also create their own channels, upload and organize videos, and engage with a community through comments and interactions. The application supports video streaming, content management, and user-driven engagement features.",
+      "Published research paper on AICCC. A Hierarchical Dual-Architecture Framework for Forensic-Quality Restoration of Surveillance Footage Degraded by Rain and Glare. Team: Justin Zack M. Doctolero, Wilfredo G. Marinay Jr., Joshua Emerson B. Valerio, Michel B. Bolo.",
     demoLink: "",
-    ghLink: "https://github.com/ezdev21/video-sharing",
+    ghLink: "https://github.com/derf567/attentive-gan-derainnet",
     order: 1,
-    skills: [],
+    skills: ["AI/ML", "Computer Vision", "Research", "Published Paper"],
   },
   {
-    imgPath: "/img/projects/online-store100.png",
+    imgPath: spmc,
     isBlog: false,
-    title: "Ecommerce",
+    title: "Hospital Referral System",
     description:
-      "An e-commerce web application that allows users to browse products, add items to a cart, and place orders. It provides sellers with tools to manage products, inventory, orders, and customers, delivering a complete online shopping experience.",
+      "A comprehensive referral system for all hospitals across Mindanao region. Currently in pilot testing at SPMC Hospital, Davao City, with full deployment scheduled for April 2025.",
     demoLink: "",
-    ghLink: "https://github.com/ezdev21/ecommerce",
+    ghLink: "https://github.com/derf567/SPMC-OJT-REFERRAL",
     order: 2,
-    skills: [],
+    skills: ["Database", "System Development", "Healthcare IT"],
+    images: [spmc, spmc_highdpt, spmc_login, spmc_lowdpt, spmc_referrer],
   },
   {
-    imgPath: "/img/projects/app-icon.png",
+    imgPath: hallOfJustice,
     isBlog: false,
-    title: "Biritu",
+    title: "Hall of Justice System",
     description:
-      "A Digital Savings Account (Biritu) is an electronic version of a regular Savings Account. With a paperless, quick and secure account opening process",
+      "Local system developed for Hall of Justice operations. Built as part of academic project focusing on real-world application development.",
     demoLink: "",
-    ghLink: "",
+    ghLink: "https://github.com/derf567/case-records",
     order: 3,
-    skills: [],
-  },
-  {
-    imgPath: "/img/projects/database.png",
-    isBlog: false,
-    title: "Pool Taxi",
-    description:
-      "Pool Taxi is a technology-based company that works in providing cost effective and technologically advanced platforms to the society. It offers transportation services to people, organizations, and institutions.",
-    demoLink: "",
-    ghLink: "",
-    order: 1,
-    skills: [],
-  },
-  {
-    imgPath: "/img/projects/android.png",
-    isBlog: false,
-    title: "Jestra",
-    description:
-      "Logistics management ensures a company has sufficient resources to fulfill client needs through the manufacturing of products, and that the products can be delivered accurately and in good condition.",
-    demoLink: "",
-    ghLink: "",
-    order: 2,
-    skills: [],
-  },
-  {
-    imgPath: "/img/projects/ios.png",
-    isBlog: false,
-    title: "Madot Solutions",
-    description:
-      "The company's mission is to promote problem-solving within our organization; produce, deliver, and support technology to make it more accessible to our customers. Increasing the capital of the organization, creating job opportunities, playing a significant role in the economic development of our country.",
-    demoLink: "",
-    ghLink: "",
-    order: 3,
-    skills: [],
-  },
-  {
-    imgPath: "/img/projects/wordpress.png",
-    isBlog: false,
-    title: "Union Academy",
-    description:
-      "Union academy dedicated to holistic education, fostering innovation, nurturing talents, and cultivating a vibrant learning community for future leaders.",
-    demoLink: "",
-    ghLink: "",
-    order: 1,
-    skills: [],
+    skills: ["Database", "System Design", "Local Deployment"],
   },
 ];

@@ -39,6 +39,46 @@ const socialLinks: SocialLink[] = [
     url: "",
     icon: <BsTwitterX />,
   },
+  // {
+  //   name: "Discord",
+  //   url: "",
+  //   icon: "discord-icon"
+  // },
+  // {
+  //   name: "Reddit",
+  //   url: "",
+  //   icon: "reddit-icon"
+  // },
+  // {
+  //   name: "TikTok",
+  //   url: "",
+  //   icon: "tiktok-icon"
+  // },
+  // {
+  //   name: "YouTube",
+  //   url: "",
+  //   icon: "youtube-icon"
+  // },
+  // {
+  //   name: "Instagram",
+  //   url: "",
+  //   icon: "instagram-icon"
+  // },
+  // {
+  //   name: "Facebook",
+  //   url: "",
+  //   icon: "facebook-icon"
+  // },
+  // {
+  //   name: "Phone",
+  //   url: "",
+  //   icon: "phone-icon"
+  // },
+  // {
+  //   name: "Upwork",
+  //   url: "",
+  //   icon: "upwork-icon"
+  // },
 ];
 
 export default socialLinks;

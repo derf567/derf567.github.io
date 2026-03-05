@@ -1,4 +1,4 @@
-import { about, quote } from "@/data/about";
+import { about, quote } from "../data/about";
 
 function AboutDetail() {
   return (

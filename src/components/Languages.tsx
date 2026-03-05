@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
+import ethiopianFlag from "@/assets/flags/ET.svg";
+import americanFlag from "@/assets/flags/US.svg";
+// import franceFlag from "@/assets/flags/FR.svg";
 import { PiGlobeHemisphereWestBold } from "react-icons/pi";
 
 const Languages = () => {
   const languages = [
-    { name: "Amharic", level: "Native/Bilingual" },
-    { name: "English", level: "Fluent" },
+    { name: "Amharic", level: "Native/Bilingual", src: ethiopianFlag },
+    { name: "English", level: "Fluent", src: americanFlag },
+    // { name: "French", level: "Basic", src: franceFlag },
   ];
 
   return (
@@ -26,6 +30,11 @@ const Languages = () => {
             key={index}
             className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5/5 py-3 px-4 md:py-4 md:px-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
           >
+            <img
+              src={lang.src}
+              alt={lang.name}
+              className="h-8 w-12 rounded-md object-cover ring-1 ring-white/20"
+            />
             <div className="text-left flex-1">
               <h3 className="text-sm md:text-base font-semibold">
                 {lang.name}

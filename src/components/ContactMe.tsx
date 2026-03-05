@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import emailjs from "@emailjs/browser";
 
 const ContactMe: React.FC = () => {
   const [name, setName] = useState<string>("");
@@ -13,12 +17,24 @@ const ContactMe: React.FC = () => {
     setLoading(true);
     setSuccess(null);
     try {
-      // Placeholder for email functionality
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name,
+          email,
+          subject,
+          message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      );
       setSuccess("Message sent successfully ✅");
       setName("");
       setEmail("");
       setSubject("");
       setMessage("");
+      window.location.reload();
+      // eslint-disable-next-line no-unused-vars
     } catch (error: unknown) {
       setSuccess("Something went wrong. Please try again ❌");
     } finally {
@@ -44,7 +60,7 @@ const ContactMe: React.FC = () => {
       <div className="md:w-1/2">
         <form onSubmit={handleSubmit} className="flex-1 flex flex-col gap-4">
           <div className="flex flex-col md:flex-row gap-4">
-            <input
+            <Input
               type="text"
               name="name"
               placeholder="John Doe"
@@ -52,7 +68,7 @@ const ContactMe: React.FC = () => {
               required
               className="flex-1 p-3 border border-gray-300 rounded-sm bg-white text-gray-800 focus:outline-2 focus:outline-primary outline-1 outline-primary"
             />
-            <input
+            <Input
               type="email"
               name="email"
               placeholder="john@example.com"
@@ -62,7 +78,7 @@ const ContactMe: React.FC = () => {
             />
           </div>
 
-          <input
+          <Input
             type="text"
             name="subject"
             placeholder="Subject"
@@ -71,7 +87,7 @@ const ContactMe: React.FC = () => {
             className="flex-1 p-3 border border-gray-300 rounded-sm bg-white text-gray-800 focus:outline-2 focus:outline-primary outline-1 outline-primary"
           />
 
-          <textarea
+          <Textarea
             name="message"
             placeholder="Hello..."
             onChange={(e) => setMessage(e.target.value)}
@@ -80,7 +96,7 @@ const ContactMe: React.FC = () => {
             className="w-full p-3 border border-gray-300 rounded-sm bg-white text-gray-800 outline-1 outline-primary focus:outline-2 focus:outline-primary resize-none"
           />
 
-          <button
+          <Button
             type="submit"
             disabled={loading}
             className={`w-full ${
@@ -90,7 +106,7 @@ const ContactMe: React.FC = () => {
             } font-medium py-3 rounded-lg transition-colors`}
           >
             {loading ? "Please Wait..." : "Send Message"}
-          </button>
+          </Button>
 
           {success && (
             <p className="text-green-500 mt-2 font-medium">{success}</p>

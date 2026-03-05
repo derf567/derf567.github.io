@@ -1,9 +1,14 @@
+import Github from "@/components/ui/Github";
 import Techstack from "@/components/Techstack";
 import { motion } from "framer-motion";
 import Education from "@/components/Education";
 import Languages from "@/components/Languages";
 import SoftSkills from "@/components/SoftSkills";
+import Testimonial from "@/components/Testimonial";
 import ContactMe from "@/components/ContactMe";
+import Hobbies from "@/components/Hobbies";
+import Lottie from "lottie-react";
+import AboutLottie from "@/assets/about-lottie.json";
 import AboutDetail from "@/components/AboutDetail";
 
 const variants = {
@@ -45,14 +50,16 @@ function About() {
               <AboutDetail />
             </div>
             <div className="md:w-5/12 z-1">
-              <div className="text-center text-gray-400">
-                [Lottie Animation Placeholder]
-              </div>
+              <Lottie animationData={AboutLottie} />
             </div>
           </div>
 
           <div>
             <Techstack />
+          </div>
+
+          <div>
+            <Github />
           </div>
 
           <div className="relative flex flex-col md:flex-row gap-8 overflow-hidden my-20">
@@ -66,6 +73,14 @@ function About() {
               <Languages />
             </div>
           </div>
+
+          {/* <div>
+          <Hobbies/>
+        </div>
+
+        <div>
+          <Testimonial/>
+        </div> */}
 
           <div>
             <ContactMe />

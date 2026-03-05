@@ -1,12 +1,12 @@
 export const home: string[] = [
-  "Hey There! I am a Senior Software Engineer from Addis Ababa, Ethiopia, holding a BSc in Electrical and Computer Engineering from Addis Ababa University. I enjoy creating applications that are both beautiful and highly functional, and I am always eager to learn new technologies and develop professionally.",
+  "Hey There! I'm Fred Marinay, a Computer Science student with a passion for web and mobile development. I love creating beautiful, functional digital experiences and turning ideas into reality through clean code and innovative design.",
 ];
 
 export const about: string[] = [
-  "Hello there! My interest in computers began early, when I was first introduced to them in Grade 3. During high school, I developed a strong passion for physics, which naturally led me to pursue Electrical and Computer Engineering at Addis Ababa University.",
-  "At university, I began exploring software development more deeply, starting with C++ and solving algorithmic challenges on Project Euler, then expanded into full-stack development, gaining in-depth experience with React, Vue, Laravel, and Node.js. While still a student, my consistent GitHub contributions helped me secure my first professional role—reinforcing my belief in learning through hands-on practice.",
-  "I fully immersed myself in becoming a better software engineer, dedicating significant time to solving complex problems and building impactful projects. I strongly believe that the most effective way to learn is by doing, which is why I continuously seek opportunities to apply my skills to real-world challenges.",
-  "Driven by curiosity and a desire for continuous growth, I am always pushing my boundaries and deepening my expertise. I am excited to contribute to meaningful, challenging projects that create lasting value.",
+  "Hello! I'm Wilfredo G. Marinay Jr, but you can call me Fred. I'm a Computer Science student with a passion for web development and creating beautiful digital experiences. My journey in tech started when I discovered the power of code to bring ideas to life, and I've been hooked ever since.",
+  "I'm the youngest in my family with one sister, Jhoelita, and one brother, Leo Vincent. Growing up, I've always been curious about how things work, which naturally led me to pursue computer science and explore the endless possibilities of technology.",
+  "When I'm not coding, you can find me gaming, playing sports, riding my motorbike, or exploring new technologies. I love the challenge of learning new frameworks and building projects that solve real-world problems. I believe in continuous learning and pushing my boundaries to become a better developer.",
+  "I'm excited to collaborate on projects that make a difference and contribute to meaningful solutions. Whether it's web or mobile development, I'm always ready to take on new challenges and grow as a developer.",
 ];
 
 interface Quote {

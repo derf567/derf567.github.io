@@ -1,9 +1,35 @@
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import type { ProjectProps } from "@/data/projects";
 
 function ProjectCard(props: ProjectProps) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
+
+  const images = props.images || [props.imgPath];
+  const currentImage = images[currentImageIndex];
+
+  useEffect(() => {
+    if (!isHovering || images.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [isHovering, images.length]);
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+    setCurrentImageIndex(0);
+  };
+
   return (
     <motion.div
       initial={
@@ -15,9 +41,10 @@ function ProjectCard(props: ProjectProps) {
       viewport={{ once: true }}
       transition={{ duration: 1.5, delay: 0.5 }}
     >
-      <div className="max-md:my-5 p-2 flex flex-col card h-full transition-all duration-500 ease-linear hover:scale-105">
+      <div className="max-md:my-5 p-2 flex flex-col card h-full transition-all duration-500 ease-linear hover:scale-105" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <img
-          src={props.imgPath}
+          key={currentImage}
+          src={currentImage}
           alt={props.title}
           loading="lazy"
           className="h-50 bg-cover rounded-sm grayscale-70 hover:grayscale-0 object-cover"
@@ -33,7 +60,7 @@ function ProjectCard(props: ProjectProps) {
             {props.skills && (
               <div className="flex gap-3 flex-wrap">
                 {props.skills.map((skill) => (
-                  <span key={skill} className="bg-secondary py-1 px-2 rounded-sm text-xs">
+                  <span className="bg-secondary py-1 px-2 rounded-sm text-xs">
                     {skill}
                   </span>
                 ))}
@@ -49,7 +76,6 @@ function ProjectCard(props: ProjectProps) {
                   className="flex items-center space-x-1"
                   href={props.ghLink}
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <BsGithub />
                   <span>{props.isBlog ? "Blog" : "GitHub"}</span>
@@ -65,7 +91,6 @@ function ProjectCard(props: ProjectProps) {
                   className="flex items-center space-x-2"
                   href={props.demoLink}
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <CgWebsite />
                   <span>Demo</span>
@@ -78,4 +103,5 @@ function ProjectCard(props: ProjectProps) {
     </motion.div>
   );
 }
+
 export default ProjectCard;

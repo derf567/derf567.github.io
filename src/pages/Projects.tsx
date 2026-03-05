@@ -37,7 +37,7 @@ function Projects() {
           </motion.div>
           <div className="grid md:grid-cols-3 pb-2.5 px-2 md:px-16 overflow-hidden">
             {projects.map((project) => (
-              <div key={project.title} className="md:px-6 md:py-12">
+              <div className="md:px-6 md:py-12">
                 <ProjectCard
                   imgPath={project.imgPath}
                   isBlog={project.isBlog}

@@ -41,7 +41,7 @@ export default function Experience() {
       const totalHeight =
         document.documentElement.scrollHeight - window.innerHeight;
       const scrolled = window.scrollY;
-      const progress = (scrolled / totalHeight) * 2000;
+      const progress = (scrolled / totalHeight) * 2000; // adjust max height if needed
       setScrollHeight(progress);
     };
 

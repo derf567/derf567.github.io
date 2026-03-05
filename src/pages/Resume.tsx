@@ -1,4 +1,11 @@
+import { useState } from "react";
+import pdf from "@/assets/Fred marinay.pdf";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/TextLayer.css";
 import { motion } from "framer-motion";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const variants = {
   initial: { opacity: 0 },
@@ -16,6 +23,8 @@ const variants = {
 };
 
 const Resume = () => {
+  const [width] = useState(window.innerWidth);
+
   return (
     <motion.div
       variants={variants}
@@ -29,15 +38,28 @@ const Resume = () => {
         <div className="py-12 min-h-screen">
           <div className="flex justify-center mb-4">
             <a
-              href="/public/certificates/Coursera 1XXSBXGSVEQ2.pdf"
-              download="Resume.pdf"
+              href={pdf}
+              download="Fred marinay.pdf"
               className="bg-primary-foreground hover:bg-primary-foreground/90 font-bold py-2 px-4 rounded cursor-pointer transition duration-300 ease-in-out"
             >
               &nbsp;Download CV
             </a>
           </div>
-          <div className="flex justify-center text-center text-gray-400 py-20">
-            <p>Resume viewer coming soon. Please download the CV using the button above.</p>
+          <div className="flex justify-center">
+            <Document file={pdf}>
+              <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+              <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+              <Page pageNumber={3} scale={width > 786 ? 1.7 : 0.6} />
+            </Document>
+          </div>
+          <div className="flex justify-center mb-4">
+            <a
+              href={pdf}
+              download="Fred marinay.pdf"
+              className="bg-primary-foreground hover:bg-primary-foreground/90 font-bold py-2 px-4 rounded cursor-pointer transition duration-300 ease-in-out"
+            >
+              &nbsp;Download CV
+            </a>
           </div>
         </div>
       </div>
