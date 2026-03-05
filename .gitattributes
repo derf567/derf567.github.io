@@ -1,0 +1,42 @@
+* text=auto
+
+# JavaScript files
+*.js text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+
+# CSS files
+*.css text eol=lf
+
+# HTML files
+*.html text eol=lf
+
+# JSON files
+*.json text eol=lf
+
+# YAML files
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.eot binary
+*.otf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.pdf binary
+*.jfif binary
+
+# Archive files
+*.zip binary
+*.tar binary
+*.gz binary
