@@ -114,7 +114,7 @@ function NavBar() {
 
           {/* GitHub Button */}
           <a
-            href="https://github.com/ezdev21/Portfolio"
+            href="https://github.com/derf567/Portfolio"
             target="_blank"
             rel="noreferrer"
             className="inline-block gap-2 mt-2 md:mt-0 mx-6 md:mx-0 bg-[#934cce5e]  hover:opacity-75 px-5 py-2 rounded-md transition-all"

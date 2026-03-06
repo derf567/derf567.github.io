@@ -14,7 +14,7 @@ function Footer() {
           </div>
         </div>
         <div className="order-3 md:order-2 md:w-1/4 text-center text-sm md:text-base py-5 md:py-2">
-          <p>Copyright © {new Date().getFullYear()} Ezra F.</p>
+          <p>Copyright © {new Date().getFullYear()} Wilfredo G. Marinay Jr</p>
         </div>
         <div className="order-2 md:order-3 md:w-1/4 text-center">
           <ul className="my-2 flex justify-start md:justify-end">

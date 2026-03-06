@@ -11,32 +11,32 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     name: "Email",
-    url: "mailto:ezradev21@gmail.com",
+    url: "mailto:wilfredomarinay@gmail.com",
     icon: <AiFillMail />,
   },
   {
     name: "GitHub",
-    url: "https://github.com/ezdev21",
+    url: "https://github.com/derf567",
     icon: <AiFillGithub />,
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/ezdev21/",
+    url: "https://www.linkedin.com/in/fred-marinay-31ab9a3a8/",
     icon: <FaLinkedinIn />,
   },
   {
     name: "Telegram",
-    url: "https://t.me/ezdev21",
+    url: "https://t.me/fredthegreat12",
     icon: <FaTelegram />,
   },
   {
     name: "WhatsApp",
-    url: "https://wa.me/251921619659",
+    url: "https://wa.me/+639917222460",
     icon: <FaWhatsapp />,
   },
   {
     name: "X",
-    url: "",
+    url: "https://x.com/fredthegreat11",
     icon: <BsTwitterX />,
   },
   // {

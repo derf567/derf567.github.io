@@ -22,7 +22,7 @@
 
 ## Getting Started
 
-clone the project `git clone https://github.com/ezdev21/portfolio`
+clone the project `git clone https://github.com/derf567/portfolio`
 
 ## 🛠 Installation and Setup Instructions
 
