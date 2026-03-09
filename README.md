@@ -16,7 +16,7 @@
 </h4>
 
 <h4>
-  Inspired by
+  Inspired byy
   <a href="https://github.com/soumyajit4419/Portfolio" target="_blank">https://github.com/soumyajit4419/Portfolio</a>
 </h4>
 
