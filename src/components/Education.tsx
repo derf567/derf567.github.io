@@ -6,10 +6,10 @@ import { FaComputer } from "react-icons/fa6";
 const Education = () => {
   const education = [
     {
-      degree: "Bachelor of Science in Electrical and Computer Engineering",
-      school: "Addis Ababa University",
+      degree: "Bachelor of Science in Computer Science",
+      school: "University of the Immaculate Conception",
       year: "",
-      specialization: "Specialized in Computer Stream",
+      specialization: "Specialized in Computer Science",
     },
   ];
 

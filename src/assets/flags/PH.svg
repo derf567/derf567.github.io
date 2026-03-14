@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <!-- White triangle -->
+  <polygon points="0,0 0,450 450,225" fill="white"/>
+  <!-- Blue stripe (top half) -->
+  <polygon points="450,0 900,0 900,225 450,225" fill="#0038A8"/>
+  <!-- Red stripe (bottom half) -->
+  <polygon points="450,225 900,225 900,450 450,450" fill="#CE1126"/>
+  <!-- Sun -->
+  <circle cx="150" cy="225" r="55" fill="#FCD116"/>
+  <!-- Sun rays (8 rays) -->
+  <g fill="#FCD116" transform="translate(150,225)">
+    <rect x="-4" y="-90" width="8" height="30" rx="3"/>
+    <rect x="-4" y="60" width="8" height="30" rx="3" transform="rotate(180)"/>
+    <rect x="-4" y="-90" width="8" height="30" rx="3" transform="rotate(45)"/>
+    <rect x="-4" y="-90" width="8" height="30" rx="3" transform="rotate(90)"/>
+    <rect x="-4" y="-90" width="8" height="30" rx="3" transform="rotate(135)"/>
+    <rect x="-4" y="-90" width="8" height="30" rx="3" transform="rotate(225)"/>
+    <rect x="-4" y="-90" width="8" height="30" rx="3" transform="rotate(270)"/>
+    <rect x="-4" y="-90" width="8" height="30" rx="3" transform="rotate(315)"/>
+  </g>
+  <!-- 3 stars at triangle corners -->
+  <polygon points="50,60 55,75 70,75 58,84 63,99 50,90 37,99 42,84 30,75 45,75" fill="#FCD116"/>
+  <polygon points="50,375 55,390 70,390 58,399 63,414 50,405 37,414 42,399 30,390 45,390" fill="#FCD116"/>
+  <polygon points="270,225 275,240 290,240 278,249 283,264 270,255 257,264 262,249 250,240 265,240" fill="#FCD116"/>
+</svg>

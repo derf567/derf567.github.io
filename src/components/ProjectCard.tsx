@@ -43,7 +43,6 @@ function ProjectCard(props: ProjectProps) {
     >
       <div className="max-md:my-5 p-2 flex flex-col card h-full transition-all duration-500 ease-linear hover:scale-105" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <img
-          key={currentImage}
           src={currentImage}
           alt={props.title}
           loading="lazy"
