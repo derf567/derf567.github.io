@@ -30,6 +30,20 @@ function ProjectCard(props: ProjectProps) {
     setCurrentImageIndex(0);
   };
 
+  const handleVisitWebsite = (url: string) => {
+    console.log("Visiting:", url); // Debug log
+    const confirmed = window.confirm(
+      `Do you want to visit this website?\n\n${props.title}\n\nURL: ${url}`
+    );
+    if (confirmed) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
+
+  const handleGithubClick = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <motion.div
       initial={
@@ -58,8 +72,8 @@ function ProjectCard(props: ProjectProps) {
             {/* these are the skills used for building the project*/}
             {props.skills && (
               <div className="flex gap-3 flex-wrap">
-                {props.skills.map((skill) => (
-                  <span className="bg-secondary py-1 px-2 rounded-sm text-xs">
+                {props.skills.map((skill, index) => (
+                  <span key={index} className="bg-secondary py-1 px-2 rounded-sm text-xs">
                     {skill}
                   </span>
                 ))}
@@ -67,33 +81,32 @@ function ProjectCard(props: ProjectProps) {
             )}
           </div>
 
-          <div className="flex space-x-3 mt-3">
-            {/* If the component contains Github link and if it's not a Blog then, it will render the below component  */}
-            {!props.isBlog && props.ghLink && (
-              <button className="bg-secondary py-1 px-3 rounded-sm">
-                <a
-                  className="flex items-center space-x-1"
-                  href={props.ghLink}
-                  target="_blank"
-                >
-                  <BsGithub />
-                  <span>{props.isBlog ? "Blog" : "GitHub"}</span>
-                </a>
+          <div className="flex flex-wrap gap-3 mt-4">
+            {/* GitHub Button */}
+            {!props.isBlog && props.ghLink && props.ghLink.trim() !== "" && (
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleGithubClick(props.ghLink!);
+                }}
+                className="bg-secondary hover:bg-secondary/90 text-white py-2 px-4 rounded-sm transition duration-300 flex items-center gap-2"
+              >
+                <BsGithub />
+                <span className="font-medium">GitHub</span>
               </button>
             )}
 
-            {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-            {!props.isBlog && props.demoLink && (
-              <button className="bg-secondary py-1 px-3 rounded-sm">
-                <a
-                  className="flex items-center space-x-2"
-                  href={props.demoLink}
-                  target="_blank"
-                >
-                  <CgWebsite />
-                  <span>Demo</span>
-                </a>
+            {/* Visit Website Button */}
+            {!props.isBlog && props.demoLink && props.demoLink.trim() !== "" && (
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleVisitWebsite(props.demoLink!);
+                }}
+                className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary py-2 px-4 rounded-sm transition duration-300 flex items-center gap-2"
+              >
+                <CgWebsite className="text-lg" />
+                <span className="font-medium">Visit Website</span>
               </button>
             )}
           </div>

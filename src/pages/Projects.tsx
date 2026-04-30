@@ -36,16 +36,18 @@ function Projects() {
             </p>
           </motion.div>
           <div className="grid md:grid-cols-3 pb-2.5 px-2 md:px-16 overflow-hidden">
-            {projects.map((project) => (
-              <div className="md:px-6 md:py-12">
+            {projects.map((project, index) => (
+              <div key={index} className="md:px-6 md:py-12">
                 <ProjectCard
                   imgPath={project.imgPath}
                   isBlog={project.isBlog}
                   title={project.title}
                   description={project.description}
                   ghLink={project.ghLink}
+                  demoLink={project.demoLink}
                   order={project.order}
                   skills={project.skills}
+                  images={project.images}
                 />
               </div>
             ))}
