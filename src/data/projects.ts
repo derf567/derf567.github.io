@@ -89,7 +89,7 @@ export const projects: ProjectProps[] = [
     title: "Villa Rosal Beach Resort Website",
     description:
       "Luxury beach resort website in Samal featuring pristine beaches, stunning pools, and world-class amenities. Experience tropical luxury with Villa Rosal Beach Resort. Created to maximize customer satisfaction and showcase resort services.",
-    demoLink: "https://villarosal.netlify.app/",
+    demoLink: "https://thevillarosal.com/",
     ghLink: "",
     order: 6,
     skills: ["Tourism", "Web Design", "Client Project", "React"],
